@@ -1,4 +1,4 @@
-# Primezilla oi querido
+# Primezilla
 ### Projeto de término de módulo - Resilia flix V2.0: 
 
 Agora é a hora de brilhar em equipe e colocar tudo o que vocês aprenderam num único projeto. Vocês deverão utilizar Bootstrap e todas as páginas devem contar com navbar e rodapé. As APIs do [OMDB](http://www.omdbapi.com/) e do [Via CEP](https://viacep.com.br/) deverão ser utilizadas nesse projeto. 

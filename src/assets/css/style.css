@@ -1,0 +1,20 @@
+/* Página Contato */
+
+.background-navbar {
+    background-color: #000000;
+}
+
+.texto-verde {
+    color: #baf32c!important;
+}
+
+.imagem-toggle {
+    width: 30px;
+    height: 30px;
+}
+
+.imagem-colaborador {
+    width: 300px;
+    border-radius: 50%;
+}
+

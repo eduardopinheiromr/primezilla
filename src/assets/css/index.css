@@ -12,3 +12,16 @@
 .cor-fonte{
   color: black;
 }
+
+.card-border{
+  border: none;
+}
+.card-format{
+  width: 14rem;
+  height: 20rem;
+  border-radius: 5px;
+}
+
+.back{
+  background-color: black!important;
+}

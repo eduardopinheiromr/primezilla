@@ -1,0 +1,14 @@
+.imagem{
+  filter: blur(2px);
+  object-fit: cover;
+  object-position: 0 0;
+  height: 400px;
+}
+
+.fonte{
+  font-family: 'Satisfy', cursive;
+}
+
+.cor-fonte{
+  color: black;
+}

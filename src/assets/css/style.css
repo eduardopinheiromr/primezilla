@@ -5,7 +5,27 @@
 }
 
 .texto-verde {
-    color: #baf32c!important;
+    color: #7DD49B!important;
+}
+
+.logo-header{
+    height: 60px;
+}
+
+.btn-login{
+    background: none;
+    color: #7DD49B;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 5rem;
+}
+.btn-cadastro{
+    background: #7DD49B;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 5rem;
 }
 
 .imagem-toggle {
@@ -18,3 +38,6 @@
     border-radius: 50%;
 }
 
+.navbar-nav{
+    align-items: center;
+}

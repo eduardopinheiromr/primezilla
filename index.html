@@ -13,38 +13,35 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand fonte" href="#">Primezilla</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav mr-3">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">ínicio<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./src/pages/busca.html">busca</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./src/pages/contato.html">contato</a>
-        </li>
-      </ul>
+  <header>
+    <section class="navbar navbar-expand-lg navbar-light background-navbar">
+      <a class="navbar-brand texto-verde" href="#"><img class="logo-header" src="./src/assets/images/logo.webp" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="imagem-toggle" src="./src/assets/images/menu-aberto.svg" alt="">
+      </button>
+      <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link texto-verde " href="#">início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-verde " href="./src/pages/busca.html">busca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-verde mr-lg-5" href="./src/pages/contato.html">contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-verde pl-0" href="./src/pages/login.html"><button class="btn-login">login</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-verde " href="#"><button class="btn-cadastro">cadastro</button></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">cadrastro</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">|</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./src/pages/login.html">login</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -52,14 +49,14 @@
         <img class="w-100 imagem" src="https://cdn.pixabay.com/photo/2019/05/19/10/40/cinema-4213751_960_720.jpg"
           alt="visão da tela do cinema a partir de uma poltrona">
         <div class="carousel-caption d-none d-md-block h-50">
-          <h1 class="fonte cor-fonte">Acomode-se e aproveite um dos nossos filmes disponíveis</h1>
+          <h1 class="fonte texto-verde">Acomode-se e aproveite um dos nossos filmes disponíveis</h1>
         </div>
       </div>
       <div class="carousel-item">
         <img class="w-100 imagem" src="https://cdn.pixabay.com/photo/2016/04/14/23/44/popcorn-1330014_960_720.jpg"
           alt="pipocas">
         <div class="carousel-caption d-none d-md-block h-50">
-          <h1 class="fonte cor-fonte ">Pegue a sua pipoca e escolha seu filme favorito</h1>
+          <h1 class="fonte cor-fonte">Pegue a sua pipoca e escolha seu filme favorito</h1>
         </div>
       </div>
     </div>

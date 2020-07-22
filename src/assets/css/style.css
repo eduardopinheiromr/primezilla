@@ -1,12 +1,27 @@
+/* Scroll */
+
+::-webkit-scrollbar-track {
+    background-color:#111;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #7DD49B;
+}
+::-webkit-scrollbar-thumb {
+    background: #7DD49B;
+}
+
 /* Página Contato */
 
 .background-navbar {
-    background-color: #000000;
+    background-color: #111;
 }
 
 .texto-verde {
     color: #7DD49B!important;
 }
+
+/* Header */
 
 .logo-header{
     height: 60px;
@@ -40,4 +55,87 @@
 
 .navbar-nav{
     align-items: center;
+}
+
+@media (max-width: 320px){
+    .logo-header{
+        height: 30px;
+    }
+}
+
+/* Página de Busca*/
+
+/* .body-busca{
+    height: vh;
+} */
+
+.conteudo-busca{
+    background: #212529;
+    color: #7DD49B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-busca h1{
+    text-align: center;
+    padding-left: 10px;
+}
+
+.section-busca{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.div-buscador{
+    display:flex;
+    justify-content: center;
+}
+
+.input-busca{
+    margin-top: 20px;
+    color: whitesmoke;
+    padding-left: 15px;
+    height: 50px;
+    border: none;
+    background: #111;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btn-buscador{
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background: #57946C;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.section-resultado-busca{
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster-filme{
+    border: 2px solid black;
+    height: 70vh;
+    width: 50vh;
+}
+
+.lista-info-filme{
+    margin-left: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
 }

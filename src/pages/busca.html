@@ -10,10 +10,11 @@
   <title>Pesquisa</title>
 </head>
 
-<body>
+<body class="body-busca">
   <header>
     <section class="navbar navbar-expand-lg navbar-light background-navbar">
-      <a class="navbar-brand texto-verde" href="#"><img class="logo-header" src="../assets/images/logo.webp" alt=""></a>
+      <a class="navbar-brand texto-verde" href="#"><img class="logo-header" src="../assets/images/logo-header.png"
+          alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <img class="imagem-toggle" src="../assets/images/menu-aberto.svg" alt="">
@@ -27,7 +28,7 @@
             <a class="nav-link texto-verde " href="../pages/busca.html">busca</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link texto-verde mr-5" href="../pages/contato.html">contato</a>
+            <a class="nav-link texto-verde mr-lg-5" href="../pages/contato.html">contato</a>
           </li>
           <li class="nav-item">
             <a class="nav-link texto-verde pl-0" href="../pages/login.html"><button class="btn-login">login</button></a>
@@ -41,14 +42,33 @@
   </header>
 
   <main class="conteudo-busca">
-    <section>
+    <section class="section-busca">
+      <h1 class="titulo-busca">Procure seu filme favorito!</h1>
       <div class="div-buscador">
-        <h1 class="titulo-busca">Procure seu filme favorito!</h1>
-        <input type="text" class="input-busca">
+        <input type="text" class="input-busca" placeholder="Digite seu filme aqui...">
         <button class="btn-buscador">Pesquisar</button>
       </div>
     </section>
+
+    <section class="section-resultado-busca">
+      <picture class="poster-filme"><img src="..." alt=""></picture>
+      <ul class="lista-info-filme">
+        <li class="info-filme">Nome do filme:<span id="nome-filme"></span></li>
+        <li class="info-filme">Ano de lançamento:<span id="ano-lancamento"></span></li>
+        <li class="info-filme">Diretor:<span id="diretor"></span></li>
+        <li class="info-filme">Sinopse:<span id="sinopse"></span></li>
+      </ul>
+    </section>
   </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

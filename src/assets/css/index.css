@@ -1,3 +1,7 @@
+.fundo-verde{
+  background-color: #7DD49B;
+}
+  
 .background-navbar {
   background-color: #000000;
 }
@@ -39,6 +43,8 @@
 .navbar-nav{
   align-items: center;
 }
+
+
 
 .imagem{
   filter: blur(2px);

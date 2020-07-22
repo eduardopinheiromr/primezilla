@@ -1,5 +1,5 @@
-.fundo-verde{
-  background-color: #7DD49B;
+.fundo-preto{
+  background-color: #000000;
 }
   
 .background-navbar {
@@ -47,7 +47,7 @@
 
 
 .imagem{
-  filter: blur(2px);
+  
   object-fit: cover;
   object-position: 0 0;
   height: 400px;
@@ -57,17 +57,18 @@
   font-family: 'Satisfy', cursive;
 }
 
-.cor-fonte{
-  color: black;
+.preto{
+  color: #000000;
 }
 
 .card-border{
-  border: none;
+  border-width: 5px;
+  border-color: #7DD49B;
+  border-radius: 5px;
 }
 .card-format{
   object-fit: cover;
   height: 350px;
-  border-radius: 5px;
 }
 
 

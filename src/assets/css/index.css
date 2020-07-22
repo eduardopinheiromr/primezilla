@@ -73,7 +73,7 @@
 
 
 @media(max-width: 570px){
-  .card-format{
+  .card-border{
     max-width: 252px;
   }
 }

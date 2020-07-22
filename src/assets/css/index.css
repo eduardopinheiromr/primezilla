@@ -76,4 +76,12 @@
   .card-border{
     max-width: 252px;
   }
+
+  .logo-header{
+    max-width: 100%;
+  }
+
+  .tamanho-navbar{
+    max-width: 75%;
+  }
 }

@@ -1,0 +1,30 @@
+.imagem{
+  filter: blur(2px);
+  object-fit: cover;
+  object-position: 0 0;
+  height: 400px;
+}
+
+.fonte{
+  font-family: 'Satisfy', cursive;
+}
+
+.cor-fonte{
+  color: black;
+}
+
+.card-border{
+  border: none;
+}
+.card-format{
+  object-fit: cover;
+  height: 350px;
+  border-radius: 5px;
+}
+
+
+@media(max-width: 570px){
+  .card-format{
+    max-width: 252px;
+  }
+}

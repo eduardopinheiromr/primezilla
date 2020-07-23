@@ -47,9 +47,9 @@
     align-items: center;
 }
 
-@media (max-width: 320px){
+@media (max-width: 768px){
     .logo-header{
-        height: 30px;
+        height: 39px;
     }
 }
 
@@ -165,12 +165,13 @@
 /* Página Contato */
 
 .background-navbar {
-    background-color: #111;
+    background-color: #000000;
 }
 
 .texto-verde {
     color: #7DD49B!important;
 }
+
 
 /* view das informações dos posters */
 .section-poster-info{
@@ -196,6 +197,24 @@
 /* responsividade do logo em telas menores que 435px */
 @media(max-width: 435px){
     .tamanho-logo{
-        width: 210px;
+      width: 210px;}
+.imagem-toggle {
+    width: 30px;
+    height: 30px;
+}
+
+.icones {
+    width: 40px;
+    height: 40px;
+} 
+
+.imagem-colaborador {
+    width: 300px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px){
+    .imagem-colaborador {
+        width: 250px;
     }
 }

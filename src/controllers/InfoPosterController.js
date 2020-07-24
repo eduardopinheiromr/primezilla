@@ -5,7 +5,7 @@ class InfoPosterController {
 
   static geraFilmes(element, url,) {
   
-      fetch(url)
+      fetch(url, {method:"POST",})
         .then(response => response.json())
         .then(json => {
           const filme = new Filme(

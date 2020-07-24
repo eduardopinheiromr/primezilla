@@ -32,7 +32,7 @@ img.forEach((item, index) => {
   item.onclick = (event) => {
     event.preventDefault();
     deletedElements.forEach((item) => item.remove())
-    InfoPosterController.geraFilmes(main, reqPosters[index]);
+    InfoPoster
   }
 });
 

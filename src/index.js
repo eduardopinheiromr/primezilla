@@ -6,7 +6,7 @@ const deletedElements = all$(".delete")
 const cards = all$(".card");
 const img = all$(".link-info");
 const main = $(".main");
-const api = `https://www.omdbapi.com/?i=tt3896198&apikey=f2f6a391`
+const api = `htt://www.omdbapi.com/?i=tt3896198&apikey=f2f6a391`
 const cartazes = [
   "&t=inception",
   "&t=the_wolf_of_wall",

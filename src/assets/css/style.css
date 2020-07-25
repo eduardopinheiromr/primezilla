@@ -307,9 +307,21 @@ button:not(:disabled),
     border-color: #28a745;
 }
 
-
 .link-retorno:hover {
     font-weight: bold;
+}
+
+.invisivel {
+    display:none;
+    width: 0;
+    height: 0;
+}
+
+.mensagemErro-small {
+    color: #ff0000;
+}
+.mensagemConfirmacao-small {
+    color: #008000;
 }
 
 @media (max-width: 767px){

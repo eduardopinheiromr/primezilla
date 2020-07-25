@@ -190,6 +190,7 @@
 .imagem-colaborador {
     width: 300px;
     border-radius: 50%;
+    border: 2px solid #7DD49B;
 }
 
 

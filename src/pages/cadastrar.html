@@ -47,7 +47,7 @@
             <h1 class="text-center texto-titulo pt-5 pb-3">Cadastre-se!</h1>
 
             <div class="d-flex justify-content-center">
-                <form>
+                <form id="form-cadastro">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="nome-cadastro" class="texto-formulario">Nome</label>
@@ -66,18 +66,22 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label for="rg-cadastro" class="texto-formulario">RG</label>
-                            <input type="text" class="form-control" id="rg-cadastro">
+                            <input type="text" class="form-control" id="rg-cadastro" maxlength="10" placeholder="Ex: 12.345.678-9">
                         </div>
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="senha-cadastro" class="texto-formulario">Senha</label>
-                            <input type="password" class="form-control" id="senha-cadastro">
+                            <label for="senha-cadastro" class="texto-formulario mb-0">Senha</label><br>
+                            <small>Senha mínima de 6 e máxima de 8 caracteres</small>
+                            <input type="password" class="form-control" id="senha-cadastro" maxlength="8">
+                            <small id="notificacao-small" class="invisivel"></small>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="confirmarSenha-cadastro" class="texto-formulario">Confirmar senha</label>
-                            <input type="password" class="form-control" id="confirmarSenha-cadastro">
+                            <label for="confirmarSenha-cadastro" class="texto-formulario mb-0">Confirmar senha</label><br>
+                            <small>Repita a senha</small>
+                            <input type="password" class="form-control" id="confirmarSenha-cadastro" maxlength="8">
+                            <small id="mensagemConfirmacao-small" class="invisivel"></small>
                         </div>
                     </div>
 
@@ -98,14 +102,12 @@
                         </div>
                     <div class="form-group col-md-4">
                         <label for="estado-cadastro" class="texto-formulario">Estado</label>
-                        <select id="estado-cadastro" class="form-control">
-                            <option selected>Escolha...</option>
-                            <option>...</option>
-                        </select>
+                        <input type="text" id="estado-cadastro" class="form-control" disabled>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="cep-cadastro" class="texto-formulario">CEP</label>
-                        <input type="text" class="form-control" id="cep-cadastro">
+                        <input type="text" class="form-control" id="cep-cadastro" maxlength="9" placeholder="Ex: 12345-678">
+                        <small id="mensagemErro-small" class="invisivel mensagemErro-small">CEP não encontrado</small>
                     </div>
                     </div>
                     
@@ -156,8 +158,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="../models/Endereco.js"></script>
+    <script src="../views/MsgCadastro.js"></script>
     <script src="../controllers/EnderecoController.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cadastro.js"></script>
 </body>
 
 </html>

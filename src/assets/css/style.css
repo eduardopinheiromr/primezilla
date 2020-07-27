@@ -330,4 +330,8 @@ button:not(:disabled),
   .container {
       height: auto;
   }
+
+  .container-msgCadastro {
+      height: 100vh;
+  }
 }

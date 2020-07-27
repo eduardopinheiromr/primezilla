@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,8 @@
 <body>
     <header>
         <section class="navbar navbar-expand-lg navbar-light background-navbar">
-            <a class="navbar-brand texto-verde" href="#"><img class="logo-header" src="../assets/images/logo-header.png"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand texto-verde" href="#"><img class="logo-header" src="../assets/images/logo-header.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img class="imagem-toggle" src="../assets/images/menu-aberto.svg" alt="">
             </button>
             <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -41,7 +40,7 @@
         </section>
     </header>
 
-    <main class="container-fluid justify-content-center bg-light vh-100">
+    <main class="container-fluid justify-content-center bg-light ">
         <section class="container">
 
             <h1 class="text-center texto-titulo pt-5 pb-3">Cadastre-se!</h1>
@@ -69,7 +68,7 @@
                             <input type="text" class="form-control" id="rg-cadastro" maxlength="10" placeholder="Ex: 12.345.678-9">
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="senha-cadastro" class="texto-formulario mb-0">Senha</label><br>
@@ -100,22 +99,23 @@
                             <label for="cidade-cadastro" class="texto-formulario">Cidade</label>
                             <input type="text" class="form-control" id="cidade-cadastro">
                         </div>
-                    <div class="form-group col-md-4">
-                        <label for="estado-cadastro" class="texto-formulario">Estado</label>
-                        <input type="text" id="estado-cadastro" class="form-control" disabled>
+                        <div class="form-group col-md-4">
+                            <label for="estado-cadastro" class="texto-formulario">Estado</label>
+                            <input type="text" id="estado-cadastro" class="form-control" disabled>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="cep-cadastro" class="texto-formulario">CEP</label>
+                            <input type="text" class="form-control" id="cep-cadastro" maxlength="9" placeholder="Ex: 12345-678">
+                            <small id="mensagemErro-small" class="invisivel mensagemErro-small">CEP não encontrado</small>
+                        </div>
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="cep-cadastro" class="texto-formulario">CEP</label>
-                        <input type="text" class="form-control" id="cep-cadastro" maxlength="9" placeholder="Ex: 12345-678">
-                        <small id="mensagemErro-small" class="invisivel mensagemErro-small">CEP não encontrado</small>
+                    <div class="form-row">
+                        <button type="submit" id="botao-cadastro" class="btn btn-primary btn-lg btn-block botao mt-4 mb-5"><span>Cadastrar</span></button>
                     </div>
-                    </div>
-                    
-                    <button type="submit" id="botao-cadastro" class="btn btn-primary btn-lg btn-block botao mt-4 mb-5"><span>Cadastrar</span></button>
                 </form>
             </div>
         </section>
-    </main> 
+    </main>
 
     <footer class="background-navbar pt-4 pb-4">
         <section class="d-flex justify-content-around align-items-center flex-sm-column flex-column flex-md-row">

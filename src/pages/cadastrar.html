@@ -50,22 +50,22 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="nome-cadastro" class="texto-formulario">Nome</label>
-                            <input type="text" class="form-control" id="nome-cadastro">
+                            <input type="text" class="form-control" id="nome-cadastro" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="sobrenome-cadastro" class="texto-formulario">Sobrenome</label>
-                            <input type="password" class="form-control" id="sobrenome-cadastro">
+                            <input type="text" class="form-control" id="sobrenome-cadastro" required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-8">
                             <label for="email-cadastro" class="texto-formulario">E-mail</label>
-                            <input type="email" class="form-control" id="email-cadastro">
+                            <input type="email" class="form-control" id="email-cadastro" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="rg-cadastro" class="texto-formulario">RG</label>
-                            <input type="text" class="form-control" id="rg-cadastro" maxlength="10" placeholder="Ex: 12.345.678-9">
+                            <input type="text" class="form-control" id="rg-cadastro" maxlength="10" placeholder="Ex: 12.345.678-9" required>
                         </div>
                     </div>
 
@@ -73,41 +73,42 @@
                         <div class="form-group col-md-6">
                             <label for="senha-cadastro" class="texto-formulario mb-0">Senha</label><br>
                             <small>Senha mínima de 6 e máxima de 8 caracteres</small>
-                            <input type="password" class="form-control" id="senha-cadastro" maxlength="8">
+                            <input type="password" class="form-control" id="senha-cadastro" maxlength="8" required>
                             <small id="notificacao-small" class="invisivel"></small>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="confirmarSenha-cadastro" class="texto-formulario mb-0">Confirmar senha</label><br>
                             <small>Repita a senha</small>
-                            <input type="password" class="form-control" id="confirmarSenha-cadastro" maxlength="8">
+                            <input type="password" class="form-control" id="confirmarSenha-cadastro" maxlength="8" required>
                             <small id="mensagemConfirmacao-small" class="invisivel"></small>
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group col-md-8">
+                        <div class="form-group col-md-3">
+                            <label for="cep-cadastro" class="texto-formulario">CEP</label>
+                            <input type="text" class="form-control" id="cep-cadastro" maxlength="9" placeholder="Ex: 12345-678" required>
+                            <small id="mensagemErro-small" class="invisivel mensagemErro-small">CEP não encontrado</small>
+                        </div>
+                        <div class="form-group col-md-9">
                             <label for="logradouro-cadastro" class="texto-formulario">Logradouro</label>
                             <input type="text" class="form-control" id="logradouro-cadastro">
                         </div>
+                    </div>
+
+                    <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="complemento-cadastro" class="texto-formulario">Número/Complemento</label>
-                            <input type="text" class="form-control" id="complemento-cadastro">
+                            <input type="text" class="form-control" id="complemento-cadastro" required>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-5">
+                        <div class="form-group col-md-4">
                             <label for="cidade-cadastro" class="texto-formulario">Cidade</label>
-                            <input type="text" class="form-control" id="cidade-cadastro">
+                            <input type="text" class="form-control" id="cidade-cadastro" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="estado-cadastro" class="texto-formulario">Estado</label>
                             <input type="text" id="estado-cadastro" class="form-control" disabled>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="cep-cadastro" class="texto-formulario">CEP</label>
-                            <input type="text" class="form-control" id="cep-cadastro" maxlength="9" placeholder="Ex: 12345-678">
-                            <small id="mensagemErro-small" class="invisivel mensagemErro-small">CEP não encontrado</small>
-                        </div>
+                        </div>    
                     </div>
                     <div class="form-row">
                         <button type="submit" id="botao-cadastro" class="btn btn-primary btn-lg btn-block botao mt-4 mb-5"><span>Cadastrar</span></button>

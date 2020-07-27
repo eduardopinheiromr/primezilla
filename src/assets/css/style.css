@@ -236,6 +236,10 @@
 
 /* Página Login, Cadastro e Recuperar Senha*/
 
+.container {
+    height: 100vh;
+}
+
 
 .texto-formulario {
     color: #7DD49B!important;
@@ -323,5 +327,7 @@ button:not(:disabled),
 }
 
 @media (max-width: 767px){
-  
+  .container {
+      height: auto;
+  }
 }

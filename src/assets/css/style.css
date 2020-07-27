@@ -327,7 +327,7 @@ button:not(:disabled),
 }
 
 @media (max-width: 767px){
-  .container {
+  .container-cadastro {
       height: auto;
   }
 

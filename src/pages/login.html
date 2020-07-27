@@ -46,14 +46,14 @@
             <h1 class="text-center texto-titulo pt-5 pb-3">Faça seu login!</h1>
 
             <div class="d-flex justify-content-center">  
-                <form>
+                <form id="form-login">
                     <div class="form-group">
                         <label for="email-login" class="texto-formulario">E-mail</label>
-                        <input type="text" class="form-control" id="email-login">
+                        <input type="text" class="form-control" id="email-login" required>
                     </div>
                     <div class="form-group">
                         <label for="senha-login" class="texto-formulario">Senha</label>
-                        <input type="password" class="form-control" id="senha-login">
+                        <input type="password" class="form-control" id="senha-login" required>
                     </div>
 
                     <div class="justify-content-end">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 
-                    <button type="submit" class="btn btn-primary btn-lg btn-block botao mt-4 mb-5"><span>Entrar</span></button>
+                    <button type="submit" id="botao-login" class="btn btn-primary btn-lg btn-block botao mt-4 mb-5"><span>Entrar</span></button>
                 </form>
             </div>
         </section>
@@ -108,6 +108,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../views/MsgLogin.js"></script>
+    <script src="../assets/js/login.js"></script>
 </body>
 
 </html>

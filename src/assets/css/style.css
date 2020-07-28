@@ -325,3 +325,9 @@ button:not(:disabled),
 @media (max-width: 767px){
   
 }
+
+/* Conteúdo de informação da PosterInfoView */
+.filme-info{
+    color: white;
+    font-weight: bold;
+}

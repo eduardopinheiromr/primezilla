@@ -105,7 +105,7 @@
 }
 
 .section-busca{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-top: 60px;
@@ -127,6 +127,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: 0.5s;
+    margin-bottom: 70vh;
 }
 
 .input-busca:focus{
@@ -193,6 +194,10 @@
 
 .texto-modal{
     list-style-type: none;
+}
+
+.colunas-modal{
+
 }
 
 .modal-header, .modal-footer, .modal-body{

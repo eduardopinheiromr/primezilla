@@ -1,74 +1,114 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Login</title>
-
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light justify-content-center">
-        <a class="navbar-brand" href="#">
-            <img src="..\assets\images\logo.png" width="600" height="100" class="d-inline-block align-top" alt="" loading="lazy">
-        </a>
-    </nav>
-    <form method="post" class="login-form" action="">
-        <div class="d-flex">
-            <div class="container justify-content-center">
-                <h1 class="text-center">Entrar</h1>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Login</label>
-                                    <input type="email" class="form-control" placeholder="Email ou número de telefone" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Senha</label>
-                                    <input type="password" placeholder="******" class="form-control" id="exampleInputPassword1">
-                                </div>
-                            </div>
-                        </div>
+    <header>
+        <section class="navbar navbar-expand-lg navbar-light background-navbar">
+            <a class="navbar-brand texto-verde" href="https://eduardopinheiromr.github.io/primezilla/index.html"><img class="logo-header" src="../assets/images/logo-header.png" lt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="imagem-toggle" src="../assets/images/menu-aberto.svg" alt="">
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link texto-verde " href="../../index.html">início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link texto-verde " href="../pages/busca.html">busca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link texto-verde mr-lg-5" href="../pages/contato.html">contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link texto-verde pl-0" href="../pages/login.html"><button
+                                class="btn-login">login</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cadastrar.html"><button class="btn-cadastro texto-verde">cadastro</button></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
 
-                        <div class="row justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <button type="submit" class=" btn btn-primary btn-lg btn-block botao"><span>Entrar</span></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-2">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Lembre-se de mim</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <a href="..\pages\remember.html" id="Esqueceu" class="form-text text-muted">Esqueceu sua senha ?</a>
-                                </div>
-                            </div>
+    <main class="container-fluid justify-content-center bg-light vh-100">
+        <section class="container">
+
+            <h1 class="text-center texto-titulo pt-5 pb-3">Faça seu login!</h1>
+
+            <div class="d-flex justify-content-center">  
+                <form id="form-login">
+                    <div class="form-group">
+                        <label for="email-login" class="texto-formulario">E-mail</label>
+                        <input type="text" class="form-control" id="email-login" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha-login" class="texto-formulario">Senha</label>
+                        <input type="password" class="form-control" id="senha-login" required>
+                    </div>
+
+                    <div class="justify-content-end">
+                        <div class="form-group">
+                            <a href="..\pages\remember.html" id="recuperarSenha-login" class="form-text text-muted texto-verde">Esqueceu sua senha?</a>
                         </div>
                     </div>
-                </div>
+                
+                    <button type="submit" id="botao-login" class="btn btn-primary btn-lg btn-block botao mt-4 mb-5"><span>Entrar</span></button>
+                </form>
             </div>
-        </div>
+        </section>
+    </main> 
 
-    </form>
+    <footer class="background-navbar pt-4 pb-4">
+        <section class="d-flex justify-content-around align-items-center flex-sm-column flex-column flex-md-row">
+            <div class="mapa-do-site">
+                <h2 class="texto-verde">Mapa do site</h2>
+                <ul class="list-unstyled text-center">
+                    <li>
+                        <a href="../../index.html" class="texto-verde">- início</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/busca.html" class="texto-verde">- busca</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/contato.html" class="texto-verde">- contato</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/cadastrar.html" class="texto-verde">- cadastro</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/login.html" class="texto-verde">- login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-center texto-verde">Feito com <img class="icones" src="../assets/images/coracao.svg" alt="Desenho de um coração"> pelos alunos do Resilia</p>
+
+            <div class="redes-sociais">
+                <img class="icones" src="../assets/images/facebook.svg" alt="Logomarca da rede social Facebook">
+                <img class="icones ml-3" src="../assets/images/instagram.svg" alt="Logomarca da rede social Instagram">
+                <img class="icones ml-3" src="../assets/images/twitter.svg" alt="Logomarca da rede social Twitter">
+            </div>
+        </section>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../views/MsgLogin.js"></script>
+    <script src="../assets/js/login.js"></script>
 </body>
 
 </html>

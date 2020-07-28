@@ -333,6 +333,9 @@ button:not(:disabled),
 }
 
 /* Hover dos posters */
-.link-info:hover{
-    transform: scale(2,2);
+.link-info{
+    transition: 500ms ease-out;
+}
+.link-info:hover{  
+    transform: scale(1.2,1.2);
 }

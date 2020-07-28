@@ -45,21 +45,37 @@
     <section class="section-busca">
       <h1 class="titulo-busca">Procure seu filme favorito!</h1>
       <div class="div-buscador">
-        <input type="text" class="input-busca" placeholder="Digite seu filme aqui...">
-        <button class="btn-buscador">Pesquisar</button>
+        <input type="text" id="input-busca" class="input-busca" placeholder="Digite seu filme aqui...">
+        <button type="button" id="btn-buscador" class="btn-buscador" data-toggle="modal"
+          data-target="#staticBackdrop">Pesquisar</button>
       </div>
     </section>
-
-    <section class="section-resultado-busca">
-      <picture class="poster-filme"><img src="..." alt=""></picture>
-      <ul class="lista-info-filme">
-        <li class="info-filme">Nome do filme:<span id="nome-filme"></span></li>
-        <li class="info-filme">Ano de lançamento:<span id="ano-lancamento"></span></li>
-        <li class="info-filme">Diretor:<span id="diretor"></span></li>
-        <li class="info-filme">Sinopse:<span id="sinopse"></span></li>
-      </ul>
-    </section>
   </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="section-resultado-busca">
+            <div id="display-busca"></div>
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -69,6 +85,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
+  <script src="../models/Filme.js"></script>
+  <script src="../views/PosterInfoView.js"></script>
+  <script src="../controllers/BuscaController.js"></script>
+  <script src="../assets/js/busca.js"></script>
 </body>
 
 </html>

@@ -331,3 +331,8 @@ button:not(:disabled),
     color: white;
     font-weight: bold;
 }
+
+/* Hover dos posters */
+.link-info:hover{
+    transform: scale(2,2);
+}

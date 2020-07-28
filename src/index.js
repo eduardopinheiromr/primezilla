@@ -1,6 +1,5 @@
 const $ = document.querySelector.bind(document);
 const all$ = document.querySelectorAll.bind(document);
-let indexA;
 const deletedElements = all$(".delete")
 
 const cards = all$(".card");

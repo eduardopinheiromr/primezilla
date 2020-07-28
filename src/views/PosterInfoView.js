@@ -1,9 +1,9 @@
-class PosterInfoView{
-  constructor(){
+class PosterInfoView {
+  constructor() {
 
   }
 
-  static addInfoFilme(model){
+  static addInfoFilme(model) {
     return `
     <section class="section-poster-info container py-5 ">
       <div class="row justify-content-center">
@@ -16,6 +16,22 @@ class PosterInfoView{
         </ul>
       </div>
     </section>
+    `
+  }
+
+  static mostraFilme(model) {
+    return `
+    <div class="d-flex flex-wrap">
+    <picture class="coluna ">
+      <img src="${model.poster}">
+    </picture>
+    <ul class="texto-modal">
+    <li class="info-filme texto-verde"><h3 class="info-title">Nome do filme: </h3><span id="nome-filme">${model.titulo}</span></li>
+    <li class="info-filme texto-verde"><h3 class="info-title">Ano de lançamento: </h3><span id="ano-lancamento">${model.ano}</span></li>
+    <li class="info-filme texto-verde"><h3 class="info-title">Diretor: </h3><span id="diretor">${model.diretor}</span></li>
+    <li class="info-filme texto-verde"><h3 class="info-title">Sinopse: </h3><span id="sinopse">${model.sinopse}</span></li>
+    </ul>
+    </div>
     `
   }
 }

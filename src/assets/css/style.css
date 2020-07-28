@@ -126,6 +126,15 @@
     background: #111;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    transition: 0.5s;
+}
+
+.input-busca:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-right: 5px;
+    transform: scale(1.1);
 }
 
 .btn-buscador{
@@ -136,30 +145,68 @@
     background: #57946C;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn-buscador:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-left: 5px;
+    transform: scale(1.1);
 }
 
 .section-resultado-busca{
-    height: 100vh;
     width: 100%;
     background: #222;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .poster-filme{
     border: 2px solid black;
-    height: 70vh;
-    width: 50vh;
+    height: 480px;
+    width: 320px;
 }
 
 .lista-info-filme{
-    margin-left: 20px;
+    color: #7DD49B;
     height: 50vh;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
+}
+
+/* Modal Busca */
+
+.info-filme{
+    font-weight: bold;
+}
+
+.info-filme span{
+    font-weight: normal;
+}
+
+.texto-modal{
+    list-style-type: none;
+}
+
+.modal-header, .modal-footer, .modal-body{
+    border: none;
+    background: #111;
+}
+
+.modal-content{
+    width: 100vh;
+}
+.modal-body{
+    padding: 0;
+    height: 80vh;
+    width: 100vh;
 }
 
 /* Página Contato */

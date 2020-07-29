@@ -196,10 +196,6 @@
     list-style-type: none;
 }
 
-.colunas-modal{
-
-}
-
 .modal-header, .modal-footer, .modal-body{
     border: none;
     background: #111;
@@ -288,10 +284,21 @@
 
 /* Página Login, Cadastro e Recuperar Senha*/
 
-.container-cadastro {
-    height: 100vh;
+.white-text{
+    color: whitesmoke;
 }
 
+.height100{
+    height: 100%;
+}
+
+.background-company{
+    background: #212529;
+}
+
+.margin-bottom-150{
+    margin-bottom: 150px;
+}
 
 .texto-formulario {
     color: #7DD49B!important;

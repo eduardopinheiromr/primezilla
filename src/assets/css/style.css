@@ -382,3 +382,11 @@ button:not(:disabled),
       height: 100vh;
   }
 }
+
+.link-info{
+    transition: 500ms ease-out;
+}
+
+.link-info:hover{
+    transform: scale(1.2,1.2);
+}

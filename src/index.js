@@ -28,7 +28,6 @@ const reqPosters = cartazes.map(urlPoster);
 PosterController.addPosters(cards, reqPosters); 
 
 img.forEach((item, index) => {
-  console.log(index)
   item.onclick = (event) => {
     event.preventDefault();
     deletedElements.forEach((item) => item.remove())

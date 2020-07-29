@@ -19,4 +19,32 @@ class PosterInfoView {
     `
   }
 
-}
+  static mostraFilme(model) {
+    return `
+    <div class="modal-header">
+      <h3>${model.titulo}</h3>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <section class="section-resultado-busca">
+      <div class="d-flex flex-wrap colunas-modal">
+      <picture class="coluna ">
+        <img src="${model.poster}">
+      </picture>
+      <ul class="texto-modal">
+      <li class="info-filme texto-verde"><h3 class="info-title">Nome do filme: </h3><span id="nome-filme">${model.titulo}</span></li>
+      <li class="info-filme texto-verde"><h3 class="info-title">Ano de lançamento: </h3><span id="ano-lancamento">${model.ano}</span></li>
+      <li class="info-filme texto-verde"><h3 class="info-title">Diretor: </h3><span id="diretor">${model.diretor}</span></li>
+      <li class="info-filme texto-verde"><h3 class="info-title">Sinopse: </h3><span id="sinopse">${model.sinopse}</span></li>
+      </ul>
+      </div>
+      </section>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Understood</button>
+    </div>
+    `
+  }

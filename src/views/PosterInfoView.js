@@ -30,10 +30,10 @@ class PosterInfoView {
     <div class="modal-body">
       <section class="section-resultado-busca">
       <div class="d-flex flex-wrap colunas-modal">
-      <picture class="coluna ">
+      <picture class="coluna col-12 col-sm-6">
         <img src="${model.poster}">
       </picture>
-      <ul class="texto-modal">
+      <ul class="texto-modal col-12 col-sm-6">
       <li class="info-filme texto-verde"><h3 class="info-title">Nome do filme: </h3><span id="nome-filme">${model.titulo}</span></li>
       <li class="info-filme texto-verde"><h3 class="info-title">Ano de lançamento: </h3><span id="ano-lancamento">${model.ano}</span></li>
       <li class="info-filme texto-verde"><h3 class="info-title">Diretor: </h3><span id="diretor">${model.diretor}</span></li>
@@ -48,3 +48,4 @@ class PosterInfoView {
     </div>
     `
   }
+}

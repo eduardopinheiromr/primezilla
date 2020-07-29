@@ -249,7 +249,7 @@
 
 .poster-filme-info{
     border: 2px solid black;
-    width: 50vh;
+    max-width: 260px;
     border:5px solid #7DD49B;
     border-radius: 5px;  
 }
